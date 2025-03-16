@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #000000, #3a3a3a);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.user-container {
+    margin-bottom: 20px;
+}
+
+.user-input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#user-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    background: #fff;
+    color: #333;
+}
+
+#search-btn {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #ffcc00;
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search-btn:hover {
+    background: #ffd633;
+}
+
+/* Progress Circles */
+.progress {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+}
+
+.easy-progress {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+}
+.medium-progress {
+    background: linear-gradient(135deg, #ff8800, #ff5500);
+}
+.hard-progress {
+    background: linear-gradient(135deg, #ff3300, #cc0000);
+}
+
+.circle span {
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    white-space: normal;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px;
+}
+
+/* Stats Card */
+.stats-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    backdrop-filter: blur(8px);
+}
+
+/* Cat Sticker Section */
+.cat-sticker {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffcc00;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .stats-card {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        font-size: 0.8em;
+    }
+
+    .cat-sticker img {
+        max-width: 80px;
+        height: auto;
+    }
+}
