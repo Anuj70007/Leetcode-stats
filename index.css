@@ -25,6 +25,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
+
 h1 {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -32,18 +33,34 @@ h1 {
     font-weight: bold;
 }
 
+/* User Input Section */
 .user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     margin-bottom: 20px;
 }
 
+.user-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 8px;   
+    width: 100%;
+    text-align: left;
+}
+
+
 .user-input-container {
     display: flex;
-    gap: 10px;
+    gap: 10px; 
+    width: 100%;
     justify-content: center;
 }
 
 #user-input {
-    width: 70%;
+    flex: 1; 
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -53,6 +70,7 @@ h1 {
     color: #333;
 }
 
+/* Search Button */
 #search-btn {
     padding: 10px 15px;
     border-radius: 8px;
@@ -127,11 +145,15 @@ h1 {
 /* Cat Sticker Section */
 .cat-sticker {
     margin-top: 15px;
-    font-size: 18px;
+    /* font-size: 18px; */
     text-align: center;
-    font-weight: bold;
-    color: #ffcc00;
+    /* font-weight: bold;
+    color: #ffcc00; */
 }
+#text{
+    margin-bottom: 5px;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
